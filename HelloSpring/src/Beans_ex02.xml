@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Setter-based Dependency Injection -->
+	
+	<!-- Definition for textEditor bean using inner bean -->
+	<!--bean id="textEditor" class="com.tutorialspoint.ex02_DI.TextEditor">
+		<property name="spellChecker">
+			<bean id="spellChecker" class="com.tutorialspoint.ex02_DI.SpellChecker"/>
+		</property>
+	</bean-->
+	<!-- Или так с использованием ref -->
+<!-- 	<bean id="textEditor" class="com.tutorialspoint.ex02_DI.TextEditor"> -->
+<!-- 		<property name="spellChecker" ref="spellChecker"/> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean id="spellChecker" class="com.tutorialspoint.ex02_DI.SpellChecker"/> -->
+
+
+	<!-- Constructor-based Dependency Injection -->
+	<bean id="textEditor" class="com.tutorialspoint.ex02_DI.TextEditor">
+		<constructor-arg ref="spellChecker" />
+	</bean>
+	
+	<bean id="spellChecker" class="com.tutorialspoint.ex02_DI.SpellChecker"/>
+	
+
+</beans>
