@@ -1,4 +1,4 @@
-package com.tutorialspoint;
+package com.tutorialspoint.ex01_basic_bean;
 
 public class HelloIndia {
 	   private String message1;

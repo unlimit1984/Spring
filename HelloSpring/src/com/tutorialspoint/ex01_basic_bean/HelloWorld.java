@@ -1,4 +1,4 @@
-package com.tutorialspoint;
+package com.tutorialspoint.ex01_basic_bean;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;

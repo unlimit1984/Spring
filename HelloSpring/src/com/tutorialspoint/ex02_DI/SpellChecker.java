@@ -1,4 +1,4 @@
-package com.tutorialspoint;
+package com.tutorialspoint.ex02_DI;
 
 public class SpellChecker {
 	
